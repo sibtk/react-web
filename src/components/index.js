@@ -5,3 +5,7 @@ export { default as Expertise } from "./Expertise";
 export { default as Timeline } from "./Timeline";
 export { default as Project } from "./Project";
 export { default as Contact } from "./Contact";
+export { default as About } from "./About";
+export { default as RtocReporting } from "./RtocReporting";
+export { default as RealEstateRoi } from "./RealEstateRoi";
+export { default as SkuStrategyTracker } from "./SkuStrategyTracker";

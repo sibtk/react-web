@@ -36,3 +36,43 @@
         color: rgb(39, 40, 34);
     }
 }
+
+.timeline-card {
+  background: linear-gradient(135deg, #6a5acd22 0%, #181c24 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(106,90,205,0.10);
+  padding: 60px 10%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  transition: background 0.3s, color 0.3s;
+}
+.light-mode .timeline-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e6e6fa 100%);
+}
+
+.light-mode .vertical-timeline-element p,
+.light-mode .vertical-timeline-element h3,
+.light-mode .vertical-timeline-element h4,
+.light-mode .vertical-timeline-element span {
+  color: #fff !important;
+}
+
+.dark-mode .vertical-timeline-element p,
+.dark-mode .vertical-timeline-element h3,
+.dark-mode .vertical-timeline-element h4,
+.dark-mode .vertical-timeline-element span {
+  color: #23244a !important;
+}
+
+.light-mode .vertical-timeline-element .vertical-timeline-element-date {
+  color: #23244a !important;
+}
+
+.dark-mode .vertical-timeline-element .vertical-timeline-element-date {
+  color: #fff !important;
+}
+
+.light-mode .vertical-timeline-element .vertical-timeline-element-date,
+.dark-mode .vertical-timeline-element .vertical-timeline-element-date {
+  color: #6a5acd !important;
+}

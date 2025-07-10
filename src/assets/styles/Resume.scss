@@ -1,0 +1,146 @@
+:root {
+  --resume-bg-light: #fff;
+  --resume-bg-dark: #181c24;
+  --resume-text-light: #222;
+  --resume-text-dark: #f8f9fa;
+  --resume-accent: #6a5acd;
+  --resume-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--resume-bg-dark);
+  border-radius: 14px;
+  box-shadow: var(--resume-shadow);
+  padding: 40px 32px 32px 32px;
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--resume-text-dark);
+  animation: fadeInResume 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.light-mode .resume-container {
+  background: var(--resume-bg-light);
+  color: var(--resume-text-light);
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.resume-contact {
+  font-size: 1.08rem;
+  margin-bottom: 16px;
+  color: var(--resume-text-dark);
+}
+.light-mode .resume-contact {
+  color: var(--resume-text-light);
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 32px;
+  background: var(--resume-accent);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(106,90,205,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+}
+.download-btn:hover {
+  background: #5848c2;
+  box-shadow: 0 4px 16px rgba(106,90,205,0.15);
+}
+
+.resume-section {
+  margin-bottom: 32px;
+  background: rgba(255,255,255,0.01);
+  border-radius: 8px;
+  padding: 18px 18px 10px 18px;
+  box-shadow: 0 1px 6px rgba(106,90,205,0.04);
+  transition: background 0.3s;
+}
+.light-mode .resume-section {
+  background: rgba(106,90,205,0.03);
+}
+
+.resume-section h2 {
+  font-size: 1.25rem;
+  color: var(--resume-accent);
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.resume-job, .resume-project {
+  margin-bottom: 16px;
+}
+
+.resume-job strong, .resume-project strong {
+  font-size: 1.08rem;
+  color: var(--resume-accent);
+  font-weight: 600;
+  text-transform: none;
+}
+
+.resume-job ul, .resume-project ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+  font-size: 1.04rem;
+  color: inherit;
+}
+
+.resume-date {
+  color: #888;
+  font-size: 0.98em;
+}
+
+@media (max-width: 600px) {
+  .resume-container {
+    padding: 18px 4vw;
+  }
+  .resume-header h1 {
+    font-size: 2rem;
+  }
+  .download-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@keyframes fadeInResume {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Highlight Resume nav link
+.navigation-bar button, .navigation-bar .MuiButton-root {
+  text-transform: none !important;
+}
+.navigation-bar button.active-nav, .navigation-bar .MuiButton-root.active-nav {
+  color: #FFD700 !important;
+  font-weight: 700;
+  background: rgba(106,90,205,0.10);
+  border-radius: 6px;
+} 

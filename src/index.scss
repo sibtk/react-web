@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
+  overflow-x: hidden;
 }
 
 code {
@@ -151,5 +152,45 @@ p, a, h1, h2, h3, h4, h5, label, button {
     .items-container {
       padding: 5% 5%;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navigation-bar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border-bottom: 1px solid #222;
+    min-height: 56px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    .MuiButton-root, button, .MuiIconButton-root {
+      min-height: 48px;
+      font-size: 1.1rem;
+    }
+    span {
+      font-size: 1.1rem;
+    }
+  }
+  .MuiDrawer-paper {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding-top: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .navigation-bar-responsive .MuiListItemButton-root {
+    min-height: 56px;
+    font-size: 1.15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 8px;
+    margin: 0.25rem 0.5rem;
+  }
+  .navigation-bar-responsive span, .navigation-bar-responsive p {
+    color: #181c24;
+  }
+  .dark-mode .navigation-bar-responsive span, .dark-mode .navigation-bar-responsive p {
+    color: #f8f9fa;
   }
 }

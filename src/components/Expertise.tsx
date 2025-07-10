@@ -1,44 +1,37 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faChartBar, faCogs, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
+    "Power BI",
+    "Retool",
     "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "SharePoint",
+    "Excel",
+    "Figma",
+    "Lucidchart"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Monday.com",
+    "Notion",
+    "Zapier",
+    "SQL",
+    "Google Workspace",
+    "Slack",
+    "AI Tools"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Documentation Systems",
+    "SOP Design",
+    "Stakeholder Dashboards",
+    "User Research",
+    "Product Briefs",
+    "Low-code Tools"
 ];
 
 function Expertise() {
@@ -48,38 +41,68 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faChartBar} size="3x"/>
+                    <h3>Internal Tools & Dashboards</h3>
+                    <p>
+                        I build internal tools and dashboards using low-code platforms and BI tools to support decision-making and team visibility.
+                    </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                        <div className="chip-group">
+                            <span className="chip-title">Core Tools:</span>
+                            {["Power BI", "Retool", "Excel", "SharePoint", "React"].map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
+                        <div className="chip-group">
+                            <span className="chip-title">Design Tools:</span>
+                            {["Figma", "Lucidchart"].map((label, index) => (
+                                <Chip key={index + 10} className='chip' label={label} />
+                            ))}
+                        </div>
                     </div>
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faCogs} size="3x"/>
+                    <h3>Workflow Automation & Systems Ops</h3>
+                    <p>
+                        I streamline operations by building workflow automations and backend integrations that cut manual effort and improve accuracy.
+                    </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                        <div className="chip-group">
+                            <span className="chip-title">Ops Tools:</span>
+                            {["Monday.com", "Zapier", "Notion", "Google Workspace"].map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
+                        <div className="chip-group">
+                            <span className="chip-title">Integrations:</span>
+                            {["SQL", "APIs", "SharePoint"].map((label, index) => (
+                                <Chip key={index + 10} className='chip' label={label} />
+                            ))}
+                        </div>
                     </div>
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faLightbulb} size="3x"/>
+                    <h3>Product Strategy & Enablement</h3>
+                    <p>
+                        I support product decisions through data-backed strategy, documentation, and UX enablement to align stakeholders and solve root issues.
+                    </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                        <div className="chip-group">
+                            <span className="chip-title">Enablement Tools:</span>
+                            {["Notion", "Lucidchart", "Confluence"].map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
+                        <div className="chip-group">
+                            <span className="chip-title">Methods:</span>
+                            {["SOP Design", "User Research", "Stakeholder Dashboards", "Product Briefs"].map((label, index) => (
+                                <Chip key={index + 10} className='chip' label={label} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,10 @@
 .skills-container {
-    padding: 5% 10%;
+    padding: 60px 10% !important;
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-top: 30px;
+    margin-bottom: 40px;
 
     svg {
         color: white;
@@ -36,6 +38,63 @@
     }
 }
 
+.about-container, .skills-container {
+  background: linear-gradient(135deg, #6a5acd22 0%, #181c24 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(106,90,205,0.10);
+  padding: 48px 32px 48px 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  transition: background 0.3s, color 0.3s;
+}
+.light-mode .about-container, .light-mode .skills-container {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e6e6fa 100%);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    flex: 3;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  .about-cta {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .learn-more-btn {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #5848c2;
+    }
+  }
+}
 .flex-chips {
     line-height: 2;
     margin: 0.5;
@@ -58,6 +117,14 @@
 
 .flex-chips .MuiChip-outlined span {
     color: rgb(39, 40, 34);
+}
+
+.light-mode .about-container h2 {
+  color: #181c24;
+}
+
+.light-mode .skills-container svg {
+  color: #181c24;
 }
 
 @media screen {
