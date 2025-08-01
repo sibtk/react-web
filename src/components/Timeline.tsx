@@ -48,10 +48,10 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Product Intern – Internal Tools</h3>
+            <h3 className="vertical-timeline-element-title">Technical Product Associate – Internal Tools</h3>
             <h4 className="vertical-timeline-element-subtitle">Aquila Engineering, Houston, TX</h4>
             <p>
-              Automated upstream reporting (−80% prep time), built BOP dashboards (−30% issue response time), and integrated Monday.com workflows with SharePoint to support IT and field ops.
+              Transitioned from Product Intern after Summer 2025. Automated upstream reporting (−80% prep time), built BOP dashboards (−30% issue response time), and integrated Monday.com workflows with SharePoint to support IT and field ops.
             </p>
           </VerticalTimelineElement>
 

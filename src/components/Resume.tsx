@@ -37,13 +37,14 @@ const Resume = () => {
           <h2>EXPERIENCE</h2>
           <div className="resume-job">
             <strong>Aquila Engineering, Houston, Texas</strong><br />
-            Product Intern – Internal Tools | June 2025 - Present
+            Technical Product Associate – Internal Tools | June 2025 - Present
             <ul>
               <li>Automated upstream reporting in Power BI, cutting prep time by 80% and reducing manual errors by 90%</li>
               <li>Built a BOP dashboard that improved visibility and cut issue response time by 30% across 3 departments</li>
               <li>Designed Monday.com intake workflows integrated with SharePoint to streamline field ops + IT requests</li>
               <li>Authored SOPs used by IT and cybersecurity, improving SLA compliance by 22% and onboarding efficiency</li>
-              <li>Participated in sprint planning and backlog grooming; prioritized internal tooling requests across RTOC, product, and engineering leads</li>
+              <li>Led tooling prioritization in sprint planning with product, engineering, and RTOC leads</li>
+              <li>Transitioned from Product Intern to Part-Time Technical Product Associate after Summer 2025</li>
             </ul>
           </div>
           <div className="resume-job">

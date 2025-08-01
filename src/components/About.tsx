@@ -22,10 +22,10 @@ const About = () => {
         <div className="about-card">
           <h1 className="about-title">Learn More About Me</h1>
           <p className="about-intro">
-            I’m Sibtain — a product-minded operator with a strong bias for building clarity in complex systems.
+            I’m Sibtain — a technical product associate with a strong bias for building clarity in complex systems.
           </p>
           <p>
-            Right now, I’m a Product & Ops intern at Aquila Engineering, where I’m helping automate internal tools, improve upstream visibility, and cut reporting time by 80%+ across field and IT teams. Previously, I worked at TechMecca (Lumeria), where I helped build dashboards and decision workflows that supported margin lift and vendor optimization.
+            Right now, I’m a Technical Product Associate at Aquila Engineering, where I’m helping automate internal tools, improve upstream visibility, and cut reporting time by 80%+ across field and IT teams. Previously, I worked at TechMecca (Lumeria), where I helped build dashboards and decision workflows that supported margin lift and vendor optimization.
           </p>
           <p>
             I’ve also worked independently as a real estate strategy consultant, designing tools to help agents and investors make faster, more informed decisions using ROI metrics, comp scoring, and workflow automation.

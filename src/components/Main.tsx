@@ -15,7 +15,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/sibtainkhan" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Sibtain Khan</h1>
-          <p>Product Intern - Internal Tools & Dashboards</p>
+          <p>Technical Product Associate - Internal Tools & Dashboards</p>
 
           <div className="mobile_social_icons">
             <a href="https://www.linkedin.com/in/sibtainkhan" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
@@ -26,7 +26,7 @@ function Main() {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            I’m a product-focused operations intern with experience designing internal tools, automating workflows, and supporting strategy teams across engineering and business units. At Aquila Engineering and TechMecca, I’ve helped optimize upstream reporting, reduce manual effort, and increase visibility across multimillions of dollars in operational assets.
+            I’m a Technical Product Associate with experience designing internal tools, automating workflows, and supporting strategy teams across engineering and business units. At Aquila Engineering and TechMecca, I’ve helped optimize upstream reporting, reduce manual effort, and increase visibility across multimillions of dollars in operational assets.
           </p>
           <p>
             My work lives at the intersection of product development, process improvement, and stakeholder alignment, and I’m passionate about building scalable solutions that drive clarity, efficiency, and impact.
